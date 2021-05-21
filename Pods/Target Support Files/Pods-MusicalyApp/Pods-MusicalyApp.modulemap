@@ -1,0 +1,6 @@
+framework module Pods_MusicalyApp {
+  umbrella header "Pods-MusicalyApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
