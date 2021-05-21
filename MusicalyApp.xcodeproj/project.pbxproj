@@ -24,6 +24,9 @@
 		04C4C42226558FFE0022DEB0 /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4C41B26558FFE0022DEB0 /* SearchInteractor.swift */; };
 		04C4C426265591370022DEB0 /* SearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C4C425265591370022DEB0 /* SearchViewController.storyboard */; };
 		04C4C4332655952A0022DEB0 /* UIViewController + Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4C4322655952A0022DEB0 /* UIViewController + Storyboard.swift */; };
+		04C4C4372656C3B50022DEB0 /* TrackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04C4C4362656C3B50022DEB0 /* TrackCell.xib */; };
+		04C4C43A2656C3D00022DEB0 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4C4392656C3D00022DEB0 /* TrackCell.swift */; };
+		04C4C445265806140022DEB0 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4C444265806140022DEB0 /* FooterView.swift */; };
 		3870B7298748BA81E2545D7C /* Pods_MusicalyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401F2A1B1B28E8F935C7C4A4 /* Pods_MusicalyApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +50,9 @@
 		04C4C41B26558FFE0022DEB0 /* SearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
 		04C4C425265591370022DEB0 /* SearchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchViewController.storyboard; sourceTree = "<group>"; };
 		04C4C4322655952A0022DEB0 /* UIViewController + Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIViewController + Storyboard.swift"; path = "../../../../../UIViewController + Storyboard.swift"; sourceTree = "<group>"; };
+		04C4C4362656C3B50022DEB0 /* TrackCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackCell.xib; sourceTree = "<group>"; };
+		04C4C4392656C3D00022DEB0 /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
+		04C4C444265806140022DEB0 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		401F2A1B1B28E8F935C7C4A4 /* Pods_MusicalyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicalyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A5A0E9BAD4665B7BC03EAD8 /* Pods-MusicalyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicalyApp.debug.xcconfig"; path = "Target Support Files/Pods-MusicalyApp/Pods-MusicalyApp.debug.xcconfig"; sourceTree = "<group>"; };
 		AAB002D68AA3BC2C77BA6422 /* Pods-MusicalyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicalyApp.release.xcconfig"; path = "Target Support Files/Pods-MusicalyApp/Pods-MusicalyApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,18 +100,17 @@
 		04B09E2E2652C3AD00071BE7 /* MusicalyApp */ = {
 			isa = PBXGroup;
 			children = (
-				04C4C41526558FC40022DEB0 /* Search */,
 				04B09E2F2652C3AD00071BE7 /* AppDelegate.swift */,
 				04B09E312652C3AD00071BE7 /* SceneDelegate.swift */,
+				04C4C42D265593870022DEB0 /* Helpers */,
+				04C4C41226558F550022DEB0 /* Services */,
+				04C4C41526558FC40022DEB0 /* Search */,
 				04B09E382652C3B500071BE7 /* Assets.xcassets */,
 				04B09E3A2652C3B500071BE7 /* LaunchScreen.storyboard */,
 				04B09E3D2652C3B500071BE7 /* Info.plist */,
 				04B09E442652C3FB00071BE7 /* MainTabBarController.swift */,
 				04B09E4D2652C60700071BE7 /* LibraryViewController.swift */,
 				04B09E4A2652C57A00071BE7 /* SearchMusicViewController.swift */,
-				04C4C41226558F550022DEB0 /* Services */,
-				04C4C3FC265566990022DEB0 /* SearchResponce.swift */,
-				04C4C42D265593870022DEB0 /* Helpers */,
 			);
 			path = MusicalyApp;
 			sourceTree = "<group>";
@@ -113,6 +118,7 @@
 		04C4C41226558F550022DEB0 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				04C4C43C2656C9B30022DEB0 /* Models */,
 				04C4C3FF265571AB0022DEB0 /* NetworkService.swift */,
 			);
 			path = Services;
@@ -121,6 +127,8 @@
 		04C4C41526558FC40022DEB0 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				04C4C443265806070022DEB0 /* FooterView */,
+				04C4C4352656C39A0022DEB0 /* Cell */,
 				04C4C425265591370022DEB0 /* SearchViewController.storyboard */,
 				04C4C41626558FFE0022DEB0 /* SearchPresenter.swift */,
 				04C4C41726558FFE0022DEB0 /* SearchWorker.swift */,
@@ -138,6 +146,31 @@
 				04C4C4322655952A0022DEB0 /* UIViewController + Storyboard.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		04C4C4352656C39A0022DEB0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				04C4C4362656C3B50022DEB0 /* TrackCell.xib */,
+				04C4C4392656C3D00022DEB0 /* TrackCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		04C4C43C2656C9B30022DEB0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04C4C3FC265566990022DEB0 /* SearchResponce.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04C4C443265806070022DEB0 /* FooterView */ = {
+			isa = PBXGroup;
+			children = (
+				04C4C444265806140022DEB0 /* FooterView.swift */,
+			);
+			path = FooterView;
 			sourceTree = "<group>";
 		};
 		2ECBF0CC395CE5454EE7B500 /* Frameworks */ = {
@@ -210,6 +243,7 @@
 				04B09E3C2652C3B500071BE7 /* LaunchScreen.storyboard in Resources */,
 				04B09E392652C3B500071BE7 /* Assets.xcassets in Resources */,
 				04C4C426265591370022DEB0 /* SearchViewController.storyboard in Resources */,
+				04C4C4372656C3B50022DEB0 /* TrackCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +301,8 @@
 				04B09E302652C3AD00071BE7 /* AppDelegate.swift in Sources */,
 				04B09E4E2652C60700071BE7 /* LibraryViewController.swift in Sources */,
 				04C4C42226558FFE0022DEB0 /* SearchInteractor.swift in Sources */,
+				04C4C445265806140022DEB0 /* FooterView.swift in Sources */,
+				04C4C43A2656C3D00022DEB0 /* TrackCell.swift in Sources */,
 				04B09E452652C3FB00071BE7 /* MainTabBarController.swift in Sources */,
 				04B09E4B2652C57A00071BE7 /* SearchMusicViewController.swift in Sources */,
 				04C4C41E26558FFE0022DEB0 /* SearchWorker.swift in Sources */,
