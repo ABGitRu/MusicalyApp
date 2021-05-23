@@ -27,6 +27,8 @@
 		04C4C4372656C3B50022DEB0 /* TrackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04C4C4362656C3B50022DEB0 /* TrackCell.xib */; };
 		04C4C43A2656C3D00022DEB0 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4C4392656C3D00022DEB0 /* TrackCell.swift */; };
 		04C4C445265806140022DEB0 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4C444265806140022DEB0 /* FooterView.swift */; };
+		04D234EA265AAB3400A036FA /* TrackDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D234E9265AAB3400A036FA /* TrackDetailView.xib */; };
+		04D234EE265AAB4B00A036FA /* TrackDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D234ED265AAB4B00A036FA /* TrackDetailView.swift */; };
 		3870B7298748BA81E2545D7C /* Pods_MusicalyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401F2A1B1B28E8F935C7C4A4 /* Pods_MusicalyApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,8 @@
 		04C4C4362656C3B50022DEB0 /* TrackCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackCell.xib; sourceTree = "<group>"; };
 		04C4C4392656C3D00022DEB0 /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 		04C4C444265806140022DEB0 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		04D234E9265AAB3400A036FA /* TrackDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackDetailView.xib; sourceTree = "<group>"; };
+		04D234ED265AAB4B00A036FA /* TrackDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailView.swift; sourceTree = "<group>"; };
 		401F2A1B1B28E8F935C7C4A4 /* Pods_MusicalyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicalyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A5A0E9BAD4665B7BC03EAD8 /* Pods-MusicalyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicalyApp.debug.xcconfig"; path = "Target Support Files/Pods-MusicalyApp/Pods-MusicalyApp.debug.xcconfig"; sourceTree = "<group>"; };
 		AAB002D68AA3BC2C77BA6422 /* Pods-MusicalyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicalyApp.release.xcconfig"; path = "Target Support Files/Pods-MusicalyApp/Pods-MusicalyApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -100,8 +104,7 @@
 		04B09E2E2652C3AD00071BE7 /* MusicalyApp */ = {
 			isa = PBXGroup;
 			children = (
-				04B09E2F2652C3AD00071BE7 /* AppDelegate.swift */,
-				04B09E312652C3AD00071BE7 /* SceneDelegate.swift */,
+				04D234E7265A466F00A036FA /* Supporting */,
 				04C4C42D265593870022DEB0 /* Helpers */,
 				04C4C41226558F550022DEB0 /* Services */,
 				04C4C41526558FC40022DEB0 /* Search */,
@@ -127,6 +130,7 @@
 		04C4C41526558FC40022DEB0 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				04D234E8265AAB0700A036FA /* TrackDetailView */,
 				04C4C443265806070022DEB0 /* FooterView */,
 				04C4C4352656C39A0022DEB0 /* Cell */,
 				04C4C425265591370022DEB0 /* SearchViewController.storyboard */,
@@ -171,6 +175,24 @@
 				04C4C444265806140022DEB0 /* FooterView.swift */,
 			);
 			path = FooterView;
+			sourceTree = "<group>";
+		};
+		04D234E7265A466F00A036FA /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				04B09E2F2652C3AD00071BE7 /* AppDelegate.swift */,
+				04B09E312652C3AD00071BE7 /* SceneDelegate.swift */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		04D234E8265AAB0700A036FA /* TrackDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				04D234E9265AAB3400A036FA /* TrackDetailView.xib */,
+				04D234ED265AAB4B00A036FA /* TrackDetailView.swift */,
+			);
+			path = TrackDetailView;
 			sourceTree = "<group>";
 		};
 		2ECBF0CC395CE5454EE7B500 /* Frameworks */ = {
@@ -244,6 +266,7 @@
 				04B09E392652C3B500071BE7 /* Assets.xcassets in Resources */,
 				04C4C426265591370022DEB0 /* SearchViewController.storyboard in Resources */,
 				04C4C4372656C3B50022DEB0 /* TrackCell.xib in Resources */,
+				04D234EA265AAB3400A036FA /* TrackDetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +334,7 @@
 				04C4C42026558FFE0022DEB0 /* SearchModels.swift in Sources */,
 				04B09E322652C3AD00071BE7 /* SceneDelegate.swift in Sources */,
 				04C4C41D26558FFE0022DEB0 /* SearchPresenter.swift in Sources */,
+				04D234EE265AAB4B00A036FA /* TrackDetailView.swift in Sources */,
 				04C4C400265571AB0022DEB0 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
